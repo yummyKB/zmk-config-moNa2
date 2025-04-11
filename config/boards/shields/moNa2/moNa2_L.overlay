@@ -19,7 +19,7 @@
 */
 &trackball_input_listener_0 {
     status = "okay";
-    device = <&trackball>;
+    device = <&trackball_split>;
     input-processors = <&zip_xy_scaler 16 16>,<&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
 };
 /*
