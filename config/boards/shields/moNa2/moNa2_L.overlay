@@ -12,11 +12,11 @@
             , <&gpio0 9 GPIO_ACTIVE_HIGH>
             ;
 };
-
+/*
 &left_encoder {
     status = "okay";
 };
-
+*/
 &trackball_input_listener_0 {
     status = "okay";
     device = <&trackball>;
