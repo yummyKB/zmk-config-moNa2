@@ -5,7 +5,9 @@ manifest:
     - name: sayu-hub
       url-base: https://github.com/sayu-hub
     - name: caksoylar  # <-- new entry
-      url-base: https://github.com/caksoylar  
+      url-base: https://github.com/caksoylar
+    - name: kzyz  # <-- 新しく追加するリモート名
+      url-base: https://github.com/kzyz
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,5 +19,9 @@ manifest:
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
       revision: main
+    - name: zmk-az1uball-driver  # <-- zmk-az1uball-driver を az1uball-test に置き換え
+      remote: kzyz  # <-- 新しいリモート名を指定
+      revision: main
+      #path: modules/az1
   self:
     path: config
