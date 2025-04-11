@@ -1,9 +1,0 @@
-description: ZMK Input Split Node
-
-compatible: "zmk,input-split"
-
-properties:
-  inputs:
-    type: phandle-array
-    required: true
-    description: Phandle list of input devices (e.g. trackballs)
