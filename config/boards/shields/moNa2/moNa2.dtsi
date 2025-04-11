@@ -41,13 +41,13 @@
     right_encoder: encoder_right {
         status = "disabled";
     };
-
+/*
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
     };
-
+*/
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
