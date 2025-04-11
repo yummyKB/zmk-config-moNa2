@@ -1,4 +1,6 @@
 #include "moNa2.dtsi"
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &kscan0 {
         col-gpios
@@ -13,4 +15,26 @@
 
 &left_encoder {
     status = "okay";
+};
+
+&trackball_input_listener_0 {
+    status = "okay";
+    device = <&trackball>;
+    input-processors = <&zip_xy_scaler 16 16>,<&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
+};
+
+&trackball_input_listener_1 {
+    status = "okay";
+};
+
+&xiao_i2c {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    trackball: trackball@0a {
+        compatible = "palette,az1uball";
+        reg = <0x0A>;
+        status = "okay";
+        default-mode = "mouse";
+        sensitivity = "4x";
+    };
 };
