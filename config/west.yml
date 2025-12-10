@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: kzyz  # <-- 新しく追加するリモート名
       url-base: https://github.com/kzyz
+    - name: carrefinho                            # <--- add this
+      url-base: https://github.com/carrefinho     # <--- and this
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -23,5 +25,8 @@ manifest:
       remote: kzyz  # <-- 新しいリモート名を指定
       revision: main
       #path: modules/az1
+    - name: prospector-zmk-module                 # <--- and these
+      remote: carrefinho                          # <---
+      revision: main                              # <---
   self:
     path: config
