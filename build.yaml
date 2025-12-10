@@ -24,5 +24,5 @@ include:
     shield: moNa2_L rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: settings_reset
-   - board: seeeduino_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: moNa2_dongle prospector_adapter
