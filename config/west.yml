@@ -25,9 +25,9 @@ manifest:
       remote: kzyz  # <-- 新しいリモート名を指定
       revision: main
       #path: modules/az1
-    - name: prospector-zmk-module                 # <--- and these
-      remote: prospector                          # <---
-      revision: v1.0.0                              # <---
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: feature/v1.1-fixes
       path: modules/prospector-zmk-module
   self:
     path: config
